@@ -2,10 +2,18 @@ import numpy as np
 
 
 def dijkstra(G, start, dest):
+    """
+    Dijkstra algorithm implementations
+
+    G: A weighted matrix
+
+    start: The start vertex
+
+    dest: The destination vertex
+    """
     labels = list()
     for i in range(G.shape[0]):
         labels.append(np.inf)
-
     labels[start] = 0
     S = list()
 
